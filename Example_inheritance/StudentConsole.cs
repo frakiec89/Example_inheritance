@@ -1,5 +1,4 @@
-﻿
-namespace Example_inheritance
+﻿namespace Example_inheritance
 {
     public class StudentConsole
     {
@@ -16,12 +15,8 @@ namespace Example_inheritance
 
         public void ResponseToText()
         {
-
-
             Console.WriteLine("Файл сохранен в \"test.txt\"");
-
             File.WriteAllText( "test.txt" ,    Student.Response());
         }
-
     }
 }
