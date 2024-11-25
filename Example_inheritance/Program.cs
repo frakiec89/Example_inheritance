@@ -2,7 +2,8 @@
 using Example_inheritance;
 
 
-StudentConsole studentConsole = new StudentConsole();
+
+StudentServiceBase student = new StudentServiceBase(); 
 
 Console.WriteLine("Привет в  каком  формате  будем работать ?");
 Console.WriteLine("\"text\" - буду выводить собщение  в  файл");
@@ -11,9 +12,12 @@ Console.WriteLine("\"console\" - буду выводить собщение  в 
 switch (Console.ReadLine())
 {
     case "text":
-        studentConsole.ResponseToText(); break;
-    case "console": studentConsole.ResponseToConsole(); break ;
+        student = new StudentText(); break;
+    case "console": student = new StudentConsole(); break;
+        default : Console.WriteLine("Я  вас не понял"); return;
 }
 
 
+// эта логика меняться не будет 
 
+student.Response();
