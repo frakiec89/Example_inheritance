@@ -11,13 +11,16 @@ namespace Example_inheritance
 
         public void ResponseToConsole()
         {
-            Student.Response();
+            Console.WriteLine(  Student.Response());
         }
 
         public void ResponseToText()
         {
-            Console.WriteLine("Файл сохранен в \"Example_inheritance\\Example_inheritance\\bin\\Debug\\net8.0\\test.txt\"");
-            Student.ResponseText();
+
+
+            Console.WriteLine("Файл сохранен в \"test.txt\"");
+
+            File.WriteAllText( "test.txt" ,    Student.Response());
         }
 
     }

@@ -6,16 +6,9 @@ namespace Example_inheritance
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public void Response()
+        public string Response ()
         {
-            Console.WriteLine($"Привет меня зовут {Name}  я студент");
+            return $"Привет меня зовут {Name}  я студент";
         }
-
-        public void ResponseText()
-        {
-            File.WriteAllText( "test.txt", $"Привет меня зовут {Name}  я студент");
-        }
-
-
     }
 }
