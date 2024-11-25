@@ -16,7 +16,7 @@ namespace Example_inheritance
 
         public void ResponseToText()
         {
-            Console.WriteLine("Файл сохранен в \"Example_inheritance\\Example_inheritance\\bin\\Debug\\net8.0\\test.txt\"");
+            Console.WriteLine("Файл сохранен в \"test.txt\"");
             Student.ResponseText();
         }
 
